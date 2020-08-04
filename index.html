@@ -1,16 +1,104 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <title>Teste Ibratan</title>
+		<meta charset="UTF-8" />
+		<link rel="stylesheet" href="style.css">
+  </head>
 
-<head>
-	<title>Parcel Sandbox</title>
-	<meta charset="UTF-8" />
-</head>
+  <body>
+		<h1 class="title">Teste Ibratan</h1>
+		<div class="wrapper">
+			<p class="text">1) Favor escrever o que o programa abaixo vai imprimir ao rodar:</p>
+			<code class="question">var quatro = [4] </br>
+				var l1 = ['primeiro', 'segundo', 3, quatro, 5, 6]</br></br>
+				console.log(l1[1]) </br>
+				console.log(l1[2]) </br>
+				console.log(l1[3]) </br>
+				console.log(l1[4]) </br>
+				console.log(l1[5]) </br>
+			</code>
 
-<body>
-	<div id="app"></div>
+			<p class="text">Resposta:</p> 
 
-	<script src="src/index.js">
-	</script>
-</body>
+			<code class="answer" data-id="answer1"></code>
+		</div>
 
+		<div class="wrapper">
+				<p class="text">2) Criar um programa que lê uma lista(array) e apresenta apenas os números impares, o conteúdo da lista deve ser
+						[5, 8, 7, 9, 2, 5, 3]:</p>
+					
+				<p class="text">Resposta:</p> 
+				
+				<code class="answer">
+					function question2() {</br>
+						&nbsp const numbers = [5, 8, 7, 9, 2, 5, 3];</br>
+						&nbsp let oddNumbers = [];</br>
+						&nbsp for (let i = 0; i < numbers.length; i++) {</br>
+						&nbsp &nbsp const positionValue = numbers[i];</br>
+						&nbsp &nbsp &nbsp if (positionValue % 2 !== 0) {</br>
+						&nbsp &nbsp &nbsp oddNumbers.push(positionValue);</br>
+						&nbsp &nbsp }</br>
+						&nbsp }</br>
+						&nbsp return oddNumbers;</br>
+					}
+				</code>
+	
+				<code class="answer" data-id="answer2"></code>
+			</div>
+
+			<div class="wrapper">
+					<p class="text">3) Explicar o que a função apresentada abaixo está fazendo:</p>
+					<code class="question">
+						 function minhaFuncao(array) {</br>
+							&nbsp var n = array.length;</br>
+							&nbsp for (var i = 0; i < array.length; i++) {</br>
+							&nbsp &nbsp for (var j = 1; j < n - i; j++) {</br>
+							&nbsp &nbsp &nbsp if (array[j - 1] > array[j]) {</br>
+							&nbsp &nbsp &nbsp &nbsp var aux = array[j - 1];</br>
+							&nbsp &nbsp &nbsp &nbsp array[j - 1] = array[j];</br>
+							&nbsp &nbsp &nbsp &nbsp array[j] = aux;</br>
+							&nbsp &nbsp &nbsp }</br>
+							&nbsp &nbsp }</br>
+							&nbsp }</br>
+							&nbsp return array;</br>
+							}
+					</code>
+
+					<p class="text">Resposta:</p> 
+		
+					<code class="answer" data-id="answer3"></code>
+				</div>
+
+				<div class="wrapper">
+						<p class="text">4) Criar um programa que apresenta os primeiros 20 números da sequência de Fibonacci:
+							Explicação: Sequência de Fibonacci é a sequência numérica proposta pelo matemático Leonardo Pisa,
+							mais conhecido como Fibonacci: 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, ... Foi a partir de um problema criado
+							por ele que o mesmo detectou a existência de uma regularidade matemática.</p>
+						
+						<p class="text">Resposta:</p> 
+						
+						<code class="answer">
+							function question4(num = 20) {</br>
+								&nbsp var arr = [0, 1];</br>
+								&nbsp for (var i = 2; i < num; i++) {</br>
+									&nbsp &nbsp arr.push(arr[i - 2] + arr[i - 1]);</br>
+									&nbsp }</br>
+									&nbsp return arr;</br>
+							}
+						</code>
+			
+						<code class="answer" data-id="answer4"></code>
+					</div>
+
+					<div class="wrapper">
+							<p class="text">5) Escrever o que entendeu do texto abaixo:</p>
+				
+							<p class="text">Resposta:</p> 
+				
+							<code class="answer" data-id="answer5"></code>
+						</div>
+
+    <script src="src/index.js"></script>
+  </body>
 </html>
